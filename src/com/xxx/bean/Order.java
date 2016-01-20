@@ -1,6 +1,6 @@
 package com.xxx.bean;
 
-import java.sql.Time;
+import java.util.Date;
 
 /**
  * @author yuan
@@ -13,8 +13,8 @@ public class Order {
 	private long productId;
 	private int count;
 	private int status;				//[ suspend | executing | completed etc. ] == [ 0 | 1 | 2 etc. ]
-	private Time orderTime;			// (下单时间)
-	private Time completionTime;	// （完成时间）
+	private Date orderTime;			// (下单时间)
+	private Date completionTime;	// （完成时间）
 	
 	
 	/**
@@ -40,7 +40,7 @@ public class Order {
 	 * @param completionTime
 	 */
 	public Order(long orderId, long productId, int count, int status,
-			Time orderTime, Time completionTime) {
+			Date orderTime, Date completionTime) {
 		super();
 		this.orderId = orderId;
 		this.productId = productId;
@@ -104,28 +104,28 @@ public class Order {
 	/**
 	 * @return the orderTime
 	 */
-	public Time getOrderTime() {
+	public Date getOrderTime() {
 		return orderTime;
 	}
 
 	/**
 	 * @param orderTime the orderTime to set
 	 */
-	public void setOrderTime(Time orderTime) {
+	public void setOrderTime(Date orderTime) {
 		this.orderTime = orderTime;
 	}
 
 	/**
 	 * @return the completionTime
 	 */
-	public Time getCompletionTime() {
+	public Date getCompletionTime() {
 		return completionTime;
 	}
 
 	/**
 	 * @param completionTime the completionTime to set
 	 */
-	public void setCompletionTime(Time completionTime) {
+	public void setCompletionTime(Date completionTime) {
 		this.completionTime = completionTime;
 	}
 
