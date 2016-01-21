@@ -20,6 +20,10 @@ public class ValueOfConfigureFile {
 	private int orderGenErr = Integer.valueOf(ReadXml.readname("config/OrderInfo.xml", "err"));
 	
 	
+	//get Time info from ProductInfo.xml
+	private int productCategory = Integer.valueOf(ReadXml.readname("config/ProductInfo.xml", "windowsize"));
+
+	
 	
 	/**
 	 * @return the windownSize
@@ -27,29 +31,40 @@ public class ValueOfConfigureFile {
 	public int getWindownSize() {
 		return windownSize;
 	}
+	
 	/**
 	 * @return the timeSize
 	 */
 	public int getTimeSize() {
 		return TimeSize;
 	}
+	
 	/**
 	 * @return the orderGenRule
 	 */
 	public String getOrderGenRule() {
 		return orderGenRule;
 	}
+	
 	/**
 	 * @return the ordersPerWin
 	 */
 	public int getOrdersPerWin() {
 		return ordersPerWin;
 	}
+	
 	/**
 	 * @return the orderGenErr
 	 */
 	public int getOrderGenErr() {
 		return orderGenErr;
+	}
+
+	/**
+	 * @return the productCategory
+	 */
+	public int getProductCategory() {
+		return productCategory;
 	}
 	
 }
