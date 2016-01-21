@@ -22,7 +22,7 @@ public class ValueOfConfigureFile {
 	
 	//get Time info from ProductInfo.xml
 	private int productCategory = Integer.valueOf(ReadXml.readname("config/ProductInfo.xml", "windowsize"));
-
+	private int productCount = Integer.valueOf(ReadXml.readname("config/ProductInfo.xml", "count"));
 	
 	
 	/**
@@ -65,6 +65,13 @@ public class ValueOfConfigureFile {
 	 */
 	public int getProductCategory() {
 		return productCategory;
+	}
+
+	/**
+	 * @return the productCount
+	 */
+	public int getProductCount() {
+		return productCount;
 	}
 	
 }
