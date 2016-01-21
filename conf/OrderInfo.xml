@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package>
+	<action rule="time" amountofwin="10" err="2" > </action>
+</package>
