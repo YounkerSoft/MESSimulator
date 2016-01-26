@@ -85,5 +85,30 @@ public class OrderGenerator {
 		return ordersPerWindow;
 		
 	}
+	
+	
+	
+	//test
+	public static void main(String[] args){
+		
+		OrderGenerator gen = new OrderGenerator();
+		
+		HashMap<Long, HashMap<Long, Order>> orders;
+		
+		orders =  gen.generateOrders();
+		
+		System.out.println("orders size:" + orders.size());
+		
+		for(int i=0; i<orders.size(); i++){
+			
+			HashMap<Long, Order> ordersPerWindow = orders.get((long)i);
+			
+			if(ordersPerWindow != null){
+				System.out.println("ordersPerWindow size:" + ordersPerWindow.size());
+			}
+			
+		}
+		
+	}
 
 }
