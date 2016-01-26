@@ -10,19 +10,19 @@ import com.xxx.util.ReadXml;
 public class ValueOfConfigureFile {
 	
 	//get Time info from TimeInfo.xml
-	private int windownSize = Integer.valueOf(ReadXml.readname("config/TimeInfo.xml", "windowsize"));
-	private int TimeSize = Integer.valueOf(ReadXml.readname("config/TimeInfo.xml", "size"));
+	private int windownSize = Integer.valueOf(ReadXml.readname("conf/TimeInfo.xml", "windowsize"));
+	private int TimeSize = Integer.valueOf(ReadXml.readname("conf/TimeInfo.xml", "size"));
 	
 	
 	//get Order info from OrderInfo.xml
-	private String orderGenRule = ReadXml.readname("config/OrderInfo.xml", "rule");
-	private int ordersPerWin = Integer.valueOf(ReadXml.readname("config/OrderInfo.xml", "amountofwin"));
-	private int orderGenErr = Integer.valueOf(ReadXml.readname("config/OrderInfo.xml", "err"));
+	private String orderGenRule = ReadXml.readname("conf/OrderInfo.xml", "rule");
+	private int ordersPerWin = Integer.valueOf(ReadXml.readname("conf/OrderInfo.xml", "amountofwin"));
+	private int orderGenErr = Integer.valueOf(ReadXml.readname("conf/OrderInfo.xml", "err"));
 	
 	
-	//get Time info from ProductInfo.xml
-	private int productCategory = Integer.valueOf(ReadXml.readname("config/ProductInfo.xml", "windowsize"));
-	private int productCount = Integer.valueOf(ReadXml.readname("config/ProductInfo.xml", "count"));
+	//get Product info from ProductInfo.xml
+	private int productCategory = Integer.valueOf(ReadXml.readname("conf/ProductInfo.xml", "category"));
+	private int productCount = Integer.valueOf(ReadXml.readname("conf/ProductInfo.xml", "count"));
 	
 	
 	/**
