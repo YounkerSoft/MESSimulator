@@ -9,6 +9,7 @@ public class Machine {
 	
 	private long machineId;
 	private int status;					//run, wait, error	==	0, 1, 2
+	private int Throughput;				//每秒钟能完成的工序数
 	private String component;
 	
 	
@@ -19,19 +20,23 @@ public class Machine {
 		super();
 		this.machineId = machineId;
 	}
-
+	
 	/**
 	 * @param machineId
 	 * @param status
+	 * @param throughput
 	 * @param component
 	 */
-	public Machine(long machineId, int status, String component) {
+	public Machine(long machineId, int status, int throughput, String component) {
 		super();
 		this.machineId = machineId;
 		this.status = status;
+		this.Throughput = throughput;
 		this.component = component;
 	}
-	
+
+
+
 
 	/**
 	 * @return the machineId
@@ -52,6 +57,20 @@ public class Machine {
 	 */
 	public void setStatus(int status) {
 		this.status = status;
+	}
+
+	/**
+	 * @return the throughput
+	 */
+	public int getThroughput() {
+		return Throughput;
+	}
+
+	/**
+	 * @param throughput the throughput to set
+	 */
+	public void setThroughput(int throughput) {
+		Throughput = throughput;
 	}
 
 	/**
