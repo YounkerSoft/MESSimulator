@@ -20,17 +20,22 @@ public class Product {
 		this.productId = productId;
 	}
 
+	
 	/**
 	 * @param productId
+	 * @param numberOfSteps
 	 * @param definition
 	 */
-	public Product(long productId, String definition) {
+	public Product(long productId, int numberOfSteps, String definition) {
 		super();
 		this.productId = productId;
+		this.NumberOfSteps = numberOfSteps;
 		this.definition = definition;
 	}
 
-	
+
+
+
 	/**
 	 * @return the productId
 	 */
@@ -49,7 +54,7 @@ public class Product {
 	 * @param numberOfSteps the numberOfSteps to set
 	 */
 	public void setNumberOfSteps(int numberOfSteps) {
-		NumberOfSteps = numberOfSteps;
+		this.NumberOfSteps = numberOfSteps;
 	}
 
 	/**
