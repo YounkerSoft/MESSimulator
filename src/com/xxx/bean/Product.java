@@ -8,6 +8,7 @@ package com.xxx.bean;
 public class Product {
 	
 	private long productId;
+	private int NumberOfSteps;		//织衣服所需要的工序数，为了统计在不同的机器上的完成时间
 	private String definition;
 	
 	
@@ -35,6 +36,20 @@ public class Product {
 	 */
 	public long getProductId() {
 		return productId;
+	}
+
+	/**
+	 * @return the numberOfSteps
+	 */
+	public int getNumberOfSteps() {
+		return NumberOfSteps;
+	}
+
+	/**
+	 * @param numberOfSteps the numberOfSteps to set
+	 */
+	public void setNumberOfSteps(int numberOfSteps) {
+		NumberOfSteps = numberOfSteps;
 	}
 
 	/**
