@@ -70,7 +70,7 @@ public class Machine {
 	 * @param throughput the throughput to set
 	 */
 	public void setThroughput(int throughput) {
-		Throughput = throughput;
+		this.Throughput = throughput;
 	}
 
 	/**
