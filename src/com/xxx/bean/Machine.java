@@ -8,6 +8,7 @@ package com.xxx.bean;
 public class Machine {
 	
 	private long machineId;
+	private String machineModel;		//机器型号
 	private int status;					//run, wait, error	==	0, 1, 2
 	private int Throughput;				//每秒钟能完成的工序数
 	private String component;
@@ -35,14 +36,42 @@ public class Machine {
 		this.component = component;
 	}
 
-
-
+	/**
+	 * @param machineId
+	 * @param machineModel
+	 * @param status
+	 * @param throughput
+	 * @param component
+	 */
+	public Machine(long machineId, String machineModel, int status,
+			int throughput, String component) {
+		super();
+		this.machineId = machineId;
+		this.machineModel = machineModel;
+		this.status = status;
+		Throughput = throughput;
+		this.component = component;
+	}
 
 	/**
 	 * @return the machineId
 	 */
 	public long getMachineId() {
 		return machineId;
+	}
+
+	/**
+	 * @return the machineModel
+	 */
+	public String getMachineModel() {
+		return machineModel;
+	}
+
+	/**
+	 * @param machineModel the machineModel to set
+	 */
+	public void setMachineModel(String machineModel) {
+		this.machineModel = machineModel;
 	}
 
 	/**
